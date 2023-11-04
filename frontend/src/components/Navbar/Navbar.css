@@ -1,9 +1,14 @@
 .container {
   background-color: #404444;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 8px;
   font-size: 20px;
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
 }
 
 .link {

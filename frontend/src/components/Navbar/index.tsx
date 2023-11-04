@@ -6,12 +6,12 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <Grid container className="container">
-      <Grid item xs={4} lg={5}>
+      <Grid item className="logo">
         <Link to={"/"} className="link">
           <PedalBikeIcon sx={{ width: "36px", height: "36px" }} />
         </Link>
       </Grid>
-      <Grid item xs={8} lg={7}>
+      <Grid item>
         <Grid container spacing={"36px"}>
           <Grid item>
             <Link to="/" className="link">

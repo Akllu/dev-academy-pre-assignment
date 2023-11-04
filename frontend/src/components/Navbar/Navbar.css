@@ -1,0 +1,19 @@
+.container {
+  background-color: #404444;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.link {
+  color: #4ec9b0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 1ms;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}

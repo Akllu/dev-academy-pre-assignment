@@ -12,12 +12,15 @@ const StationList = () => {
     page: 0,
     pageSize: 10
   });
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       const reply = await stationsService.getStations(paginationModel);
       setStations(reply.rows);
       setTotalRowCount(reply.totalRowCount);
+      setLoading(false);
     };
 
     fetchData();
@@ -33,6 +36,7 @@ const StationList = () => {
       <h1>Stations</h1>
       <Card>
         <DataGrid
+          loading={loading}
           columns={columns}
           rows={stations}
           rowCount={totalRowCount}

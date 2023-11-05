@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Helsinki city bike application</h1>
@@ -15,4 +15,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

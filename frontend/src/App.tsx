@@ -1,16 +1,16 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import HomePage from "./pages/HomePage";
-import StationsPage from "./pages/StationsPage";
+import Home from "./pages/Home";
+import StationList from "./pages/StationList";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/stations" element={<StationsPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/stations" element={<StationList />} />
         <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

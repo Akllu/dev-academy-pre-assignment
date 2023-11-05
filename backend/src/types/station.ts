@@ -5,3 +5,8 @@ export interface IStation {
   coordinate_x?: string;
   coordinate_y?: string;
 }
+
+export interface IStationQueryParams {
+  offset: number;
+  limit: number;
+}

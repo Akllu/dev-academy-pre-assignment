@@ -14,6 +14,12 @@ const getStations = async (paginationModel: GridPaginationModel) => {
   return data;
 };
 
+const getStation = async (id: number) => {
+  const { data } = await axios.get<IStation>(`http://localhost:4000/api/stations/${id}`);
+  return data;
+};
+
 export default {
-  getStations
+  getStations,
+  getStation
 };
